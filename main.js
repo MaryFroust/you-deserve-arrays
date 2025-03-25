@@ -3,27 +3,31 @@
  ******************/
 
  function getFirstItemFrom(arr){
-  //const firstItem = arr[0]
   return  arr[0] 
  }
  function getLastItemFrom(arr){
   return arr [arr.length - 1]
 }
- function getIndex3(arr){[22, 45, 'old', 77 ['seeds', 'trees', 'flowers']]
-    return arr [3]
-    //console.log(getIndex3[2])
-    return arr [arr.length - 1]
+ function getIndex3(arr){
+    if(arr.length >= 4){
+      return arr [3]
+    }else{
+      return arr[arr.length - 1]
+    }
+    //return arr [3] is WRONG by themselves
+    //return arr [arr.length - 1] is WRONG by themselves
  }
   
   function isLongList(arr){
-    return arr !== 10
+    return arr.length >= 10
    
-    //return typeof num === 10
   }
-  function firstItemIsNumber(num){
-    return num === 'number' 
+  function firstItemIsNumber(arr){
+   const result = typeof arr[0] === "number"
+   return result
+    //return arr === 'number' is WRONG 
   }
-  function secondCharOfThirdString(arr){['socks', 'shoes', 'pants']
+  function secondCharOfThirdString(arr){
     return arr[2][1]
   }
 
